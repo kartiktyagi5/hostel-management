@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  /* Shared Variables */
+  --primary: #6366f1;
+  --primary-glow: rgba(99, 102, 241, 0.5);
+  --bg-main: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --font-heading: 'Urbanist', sans-serif;
+  --font-body: 'Instrument Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: auto !important;
+  height: auto !important;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  overflow-y: visible !important;
+  line-height: 1.6;
+  background: #ffffff;
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.aurora-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at 0% 0%, #fef2f2 0%, transparent 50%),
+    radial-gradient(circle at 100% 100%, #eff6ff 0%, transparent 50%);
+  overflow: hidden;
+  pointer-events: none;
+  /* Prevent background from blocking scroll */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
